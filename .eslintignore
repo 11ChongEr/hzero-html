@@ -1,0 +1,10 @@
+config/
+scripts/
+public/lib/
+src/serviceWorker.js
+build/
+packages/
+dist
+core/
+bin
+/lib/

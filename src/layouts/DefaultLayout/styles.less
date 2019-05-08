@@ -1,0 +1,150 @@
+@import '../../assets/styles/utils.less';
+
+//@paddingWidth: 16px;
+
+.default-layout {
+  height: 100vh;
+
+  .menu {
+    // 新的菜单
+    width: 220px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #1e3255;
+    // 用于 二级菜单定位
+    position: relative;
+
+    > :global(.ant-layout-sider-children) {
+      // FIXME: 需要穿透 HZERO-UI 的元素结构
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    // logo-header 覆盖样式
+    .logo {
+      flex-shrink: 0;
+      padding: 0 20px;
+
+      &.collapsed {
+        justify-content: center;
+      }
+
+      > a {
+        // Link
+        height: 48px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .icon-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+
+      .icon-img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .title {
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+        // mixin
+        .textOverflow();
+      }
+    }
+
+    // 菜单搜索框的样式
+    .search {
+      flex-shrink: 0;
+      // padding-left: @paddingWidth;
+      // height: 46px;
+    }
+
+    > div {
+      flex-shrink: 0;
+    }
+  }
+
+  .content {
+    flex-grow: 1;
+    // 右侧内容
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .header {
+    background-color: #f4f5f7;
+    // 头
+    height: 48px;
+    padding: 0;
+
+    .menu-trigger {
+      cursor: pointer;
+      // IMPROVE: 出发ICON需要超越层级
+      position: absolute;
+      z-index: 1;
+      padding: 16px 24px;
+      font-size: 18px;
+    }
+  }
+
+  .page {
+    background-color: #fff;
+    // 页面 (路由)
+    flex-grow: 1;
+    // 布局相关
+    overflow: auto;
+    height: 100vh;
+    margin-top: -48px;
+
+    > :global(.ant-tabs) {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+      > :global(.ant-tabs-bar) {
+        flex-shrink: 0;
+        height: 48px;
+        padding-top: 7px;
+        padding-left: 64px;
+        margin-bottom: 0;
+
+        //// FIXME: 为了 激活的 和 工作台 隐藏 border
+        //display: flex;
+        //flex-direction: row-reverse;
+        //justify-content: flex-start;
+        //align-items: center;
+        //
+        //> :global(.ant-tabs-extra-content) {
+        //  // Tabs tab 额外的内容
+        //}
+        //
+        //> :global(.ant-tabs-nav-container) {
+        //  // 为了 tab 超出 覆盖 横条
+        //  overflow: initial;
+        //  flex-grow: 1;
+        //}
+      }
+
+      > :global(.ant-tabs-content) {
+        flex-shrink: 0;
+        // flex 布局的不确定位置 需要显示指定大小 否则会被子元素撑开
+        height: calc(~'100vh - 48px');
+
+        > :global(.ant-tabs-tabpane-active) {
+          height: 100%;
+          display: flex;
+        }
+      }
+    }
+  }
+}

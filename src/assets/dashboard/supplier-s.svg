@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>supplier-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="supplier-s">
+            <polygon id="Path-26" fill="#1E3255" points="0.398412953 3.75586924 0.398412953 10.5165618 7 13.4054009 7 6.1873104"></polygon>
+            <polygon id="Path-28" fill="#29BECE" points="0.826684188 3.32289202 7 6.16241595 13.1359823 3.32289202 7 0.538820672"></polygon>
+            <path d="M7,0.543983793 L0.5,3.32969808 L0.5,10.6703019 L7,13.4560162 L13.5,10.6703019 L13.5,3.32969808 L7,0.543983793 Z" id="Path-23" stroke="#1E3255"></path>
+            <polyline id="Path-24" stroke="#1E3255" points="0.643466619 3.4200895 7 6.07372493 13.4596013 3.4200895"></polyline>
+            <path d="M7,5.92249678 L7,13.0605971" id="Path-25" stroke="#1E3255"></path>
+        </g>
+    </g>
+</svg>

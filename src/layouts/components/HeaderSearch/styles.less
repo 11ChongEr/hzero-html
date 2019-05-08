@@ -1,0 +1,39 @@
+.search {
+  height: 46px;
+  .input {
+    opacity: 0.2;
+    background: #fff;
+    margin: 7px 20px;
+    width: 180px;
+    cursor: text;
+    // FIXME: 没有这个字体
+    // font-family: PingFangSC-Regular;
+    font-size: 14px;
+    line-height: 32px;
+    input {
+      opacity: 0.5;
+      color: #fff;
+      height: 18px;
+      line-height: 32px;
+    }
+  }
+  .history {
+    // 搜索历史
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.focus {
+  .input {
+    opacity: 1;
+    input {
+      color: #333;
+      opacity: 1;
+    }
+  }
+}
+
+.collapsed {
+  display: none;
+}

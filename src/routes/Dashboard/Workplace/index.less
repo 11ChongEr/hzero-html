@@ -1,0 +1,60 @@
+.gridLayoutContainer {
+  .dragCard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: visible;
+    cursor: move;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .boxShadow {
+    border-radius: 2px;
+    transition: 0.5s;
+  }
+  .boxShadow:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  :global {
+    .react-grid-item {
+      overflow: hidden;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+    .react-grid-item.react-grid-placeholder {
+      background-color: #909090;
+      z-index: 0;
+    }
+    .ant-card-body {
+      overflow: auto;
+      flex: auto;
+    }
+    .react-grid-item.react-draggable {
+      border: 1px dashed #999;
+      padding: 1px;
+    }
+  }
+}
+// 卡片设置界面
+.card-setting {
+  .card-row {
+    margin-top: 14px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .card-col {
+    margin-top: 12px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>sale-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sale-s">
+            <rect id="Rectangle" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="18" height="18"></rect>
+            <g id="Group-26" transform="translate(1.000000, 1.000000)" stroke="#29BECE">
+                <rect id="Rectangle" x="0.5" y="10.5" width="3" height="5" rx="1"></rect>
+                <rect id="Rectangle-Copy-9" x="6.5" y="8.5" width="3" height="7" rx="1"></rect>
+                <rect id="Rectangle-Copy-10" x="12.5" y="6.5" width="3" height="9" rx="1"></rect>
+                <polyline id="Path-20" stroke-linecap="round" stroke-linejoin="round" points="1.71715009 7.31159175 6.29025759 3.63555279 8.39337663 5.84448757 14.1188096 1.21286061"></polyline>
+                <polyline id="Path-21" stroke-linecap="round" stroke-linejoin="round" points="10.7024039 0.833660747 14.7941808 0.54344535 14.3432887 4.49960396"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

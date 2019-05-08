@@ -1,0 +1,118 @@
+/**
+ * less 接口监控详情页
+ * @date: 2018-9-29
+ * @author: liuzhaohui <zhaohui.liu@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.content {
+  width: 600px;
+  .title {
+    color: #999;
+    margin-bottom: 40px;
+    .company {
+      color: #000;
+    }
+  }
+  .form {
+    .button {
+      margin-left: 8px;
+    }
+  }
+}
+
+.agree-top {
+  display: flex;
+  align-items: center;
+  .agree-word {
+    margin-right: 66px;
+  }
+  .company {
+    color: #4371ef;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+  .tag {
+    padding-right: 3px;
+  }
+}
+.tabs {
+  padding: 0 20px 40px 20px;
+}
+
+.information-container {
+  margin: 10px 30px 10px 30px;
+  .information-title {
+    font-size: 14px;
+    color: #314659;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+  .information-item {
+    border-bottom: 1px #dcdcdc dashed;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    .information-item-label {
+      color: #999;
+    }
+  }
+}
+// 企业信息行信息
+.information-content-container {
+  display: flex;
+  border-bottom: 1px #dcdcdc dashed;
+  padding-bottom: 4px;
+  justify-content: space-between;
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    & > :first-child {
+      width: 80px;
+      color: #999;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}
+// 头信息标题
+.description-title {
+  font-size: 14px;
+  color: #314659;
+  margin-bottom: 20px;
+}
+// 头信息列表
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+  .one-line {
+    flex: 0 0 100%;
+  }
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+  .three-col {
+    display: flex;
+    flex: 0 0 75%;
+  }
+  .four-col {
+    display: flex;
+    flex: 0 0 25%;
+  }
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px dashed #dcdcdc;
+    & > :first-child {
+      width: 100px;
+      color: #aaa;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}

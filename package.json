@@ -1,0 +1,222 @@
+{
+  "name": "hzero-front",
+  "version": "0.0.1",
+  "private": true,
+  "description": "HZero Front",
+  "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.3.1",
+    "@tinymce/tinymce-react": "2.3.0",
+    "babel-plugin-named-asset-import": "^0.3.1",
+    "bizcharts": "^3.4.3",
+    "bizcharts-plugin-slider": "^2.1.1-beta.1",
+    "classnames": "2.2.6",
+    "codemirror": "^5.44.0",
+    "cropperjs": "^1.4.3",
+    "dva": "^2.4.1",
+    "dva-loading": "^2.0.6",
+    "enquire-js": "^0.2.1",
+    "es6-shim": "^0.35.4",
+    "event-emitter": "^0.3.5",
+    "history": "^4.7.2",
+    "hzero-ui": "^1.0.61",
+    "jsplumb": "^2.9.0",
+    "lodash": "^4.17.11",
+    "lodash-decorators": "^6.0.1",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "path-to-regexp": "2.4.0",
+    "query-string": "^6.2.0",
+    "rc-drawer-menu": "^1.1.0",
+    "react": "^16.8.3",
+    "react-codemirror2": "^5.1.0",
+    "react-cropper": "^1.2.0",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.8.3",
+    "react-draggable": "3.0.5",
+    "react-fittext": "^1.0.0",
+    "react-grid-layout": "^0.16.6",
+    "react-intl-universal": "1.13.1",
+    "react-sortable-pane": "^1.0.4",
+    "react-viewer": "^2.8.0",
+    "tinymce": "4.8.3",
+    "universal-cookie": "^3.0.7",
+    "url-polyfill": "^1.1.3",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "react-dev-utils": "^7.0.3",
+    "react-app-polyfill": "^0.2.1",
+    "resolve": "1.10.0",
+    "identity-obj-proxy": "3.0.0",
+    "dotenv": "6.0.0",
+    "dotenv-expand": "4.2.0",
+    "babel-preset-react-app": "^7.0.1",
+    "@svgr/webpack": "4.1.0",
+    "bfj": "6.1.1",
+    "@babel/core": "7.2.2",
+    "@babel/cli": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "add-asset-html-webpack-plugin": "^3.1.3",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "cache-loader": "^2.0.1",
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "conventional-changelog-cli": "^2.0.12",
+    "cross-env": "^5.2.0",
+    "css-loader": "1.0.0",
+    "eslint": "5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-react-app": "^3.0.7",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-compat": "^2.7.0",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.12.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "2.0.0",
+    "fork-ts-checker-webpack-plugin-alt": "0.4.14",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "fs-extra": "7.0.1",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-webpack-plugin": "4.0.0-alpha.2",
+    "husky": "^1.3.1",
+    "jest": "23.6.0",
+    "jest-pnp-resolver": "1.0.2",
+    "jest-resolve": "23.6.0",
+    "jest-watch-typeahead": "^0.2.1",
+    "lerna": "^3.13.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.4",
+    "mini-css-extract-plugin": "0.4.1",
+    "mocker-api": "^1.6.7",
+    "mockjs": "1.0.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "pnp-webpack-plugin": "1.2.1",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.5.0",
+    "postcss-safe-parser": "4.0.1",
+    "prettier": "^1.16.4",
+    "recursive-readdir": "^2.2.2",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^5.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "terser-webpack-plugin": "1.2.2",
+    "url-loader": "1.1.2",
+    "webpack": "4.28.3",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "3.1.14",
+    "webpack-manifest-plugin": "2.0.4",
+    "webpackbar": "^3.1.5",
+    "wget": "^0.0.1",
+    "workbox-webpack-plugin": "3.6.3",
+    "yarn": "^1.13.0"
+  },
+  "scripts": {
+    "start": "cross-env BASE_PATH=/ PLATFORM_VERSION=SAAS  CLIENT_ID=localhost BPM_HOST=http://192.168.16.172:8170 API_HOST=http://hzerodevb.saas.hand-china.com WEBSOCKET_HOST=ws://192.168.16.172:8120 node --max_old_space_size=8196 scripts/start.js",
+    "build": "npm run lint:fix && cross-env BASE_PATH=/ PLATFORM_VERSION=BUILD_PLATFORM_VERSION WEBSOCKET_HOST=BUILD_WEBSOCKET_HOST BPM_HOST=BUILD_BPM_HOST CLIENT_ID=BUILD_CLIENT_ID API_HOST=BUILD_API_HOST GENERATE_SOURCEMAP=false node --max_old_space_size=4196 scripts/build.js",
+    "build:production": "npm run dll && cross-env BASE_PATH=/ PLATFORM_VERSION=BUILD_PLATFORM_VERSION WEBSOCKET_HOST=BUILD_WEBSOCKET_HOST BPM_HOST=BUILD_BPM_HOST CLIENT_ID=BUILD_CLIENT_ID API_HOST=BUILD_API_HOST GENERATE_SOURCEMAP=false node --max_old_space_size=4196 scripts/build.js",
+    "build:analyze": "npm run lint:fix && cross-env ANALYZE=true node --max_old_space_size=4196 scripts/build.js",
+    "dll": "webpack --progress --config config/webpack.dll.config.js",
+    "lint": "eslint --ext .js src && npm run lint:style",
+    "lint:fix": "eslint --quiet --fix --ext .js src && npm run lint:style",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "build:lib": "cross-env NODE_ENV=production BABEL_ENV=production node ./node_modules/@babel/cli/bin/babel.js src --out-dir lib --copy-files --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "transpile": "cross-env NODE_ENV=production BABEL_ENV=production node ../../node_modules/@babel/cli/bin/babel.js src --out-dir lib --copy-files",
+    "test": "node scripts/test.js",
+    "changelog": "node node_modules/.bin/conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "prettier": "prettier --write ./src/**/**/**/*",
+    "tree": "tree -I node_modules -L 3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-merge": "git submodule update",
+      "post-checkout": "git submodule update"
+    }
+  },
+  "optionalDependencies": {
+    "puppeteer": "^1.1.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint --quiet --fix --ext .js",
+    "src/**/*.less": "stylelint --syntax less",
+    "src/**/*.{js,jsx,less}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
+    ]
+  }
+}

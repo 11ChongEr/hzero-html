@@ -1,0 +1,666 @@
+@import '../../../assets/styles/utils.less';
+
+//.user-info {
+//  font-size: 16px;
+//  padding: 0;
+//}
+
+.head-info-wrap {
+  background-color: #f8fafc;
+  padding: 10px 0;
+  height: 140px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.color-unbind {
+  color: #de9b0a;
+}
+
+.color-bind {
+  color: #1cbc86;
+}
+
+// icon-info
+.icon-info {
+  margin: 32px 0;
+  display: flex;
+  flex-flow: row;
+
+  &-icon {
+    flex-basis: 16px;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+
+  &-info {
+    flex-grow: 1;
+
+    :global(.ant-form-item-control-wrapper) {
+      margin-top: -7px;
+    }
+  }
+
+  &-btn {
+    flex-basis: 60px;
+    font-size: 12px;
+  }
+}
+
+.icon-info-info {
+  &-comment {
+    color: #999;
+    font-size: 12px;
+  }
+}
+
+.icon-info-info-content {
+  &-title {
+    font-size: 16px;
+  }
+
+  &-description {
+    font-size: 14px;
+  }
+}
+
+// icon-info
+
+// head-info
+
+.avatar-box {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  width: 102px;
+  height: 102px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  font-size: 12px;
+
+  // 图片固定到 100px
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.avatar-box:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease 0s;
+}
+
+.avatar-box:hover:after {
+  opacity: 1;
+}
+
+.avatar-box .box-content {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+}
+
+.avatar-uploader-trigger {
+  font-size: 30px;
+  line-height: 100px;
+}
+
+.avatar-box:hover .box-content {
+  bottom: 0;
+}
+
+.avatar-upload {
+  display: flex;
+  justify-content: flex-start;
+
+  .avatar-crop-wrap {
+    background: #f2f2f5;
+
+    .avatar-crop {
+      width: 300px;
+      height: 300px;
+
+      .cropper-modal {
+        background: #fafafa;
+      }
+
+      .cropper-view-box {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .avatar-preview-wrap {
+    margin-left: 12px;
+    // padding: 12px;
+    text-align: center;
+    height: 300px;
+
+    .preview {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      padding: 8px 0;
+
+      .img-preview {
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.icon-style {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.avatar-uploader {
+  :global(.ant-upload-drag) {
+    height: 340px !important;
+  }
+}
+
+.head-info {
+  // 头像
+  &-avatar {
+    width: 100px;
+    height: 100px;
+    // margin-top: 20px;
+    cursor: pointer;
+  }
+
+  // 内容
+  &-content {
+    flex: 1;
+    margin-left: 50px;
+    line-height: 40px;
+
+    &-label {
+      text-align: left;
+      color: #999;
+
+      label {
+        color: #999;
+      }
+    }
+  }
+
+  :global {
+    .ant-form-item-with-help {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//.main {
+//  width: 885px;
+//  margin: 0 auto;
+//  display: flex;
+//}
+
+// head-info
+
+// list
+
+.user-info-list {
+  margin: 48px auto 0;
+
+  &-title {
+    padding-left: 25px;
+
+    &:before {
+      content: '';
+      border-left: 3px solid #5e7ee6;
+      padding-right: 10px;
+    }
+  }
+}
+
+// list
+
+// 绑定按钮的样式
+//.btn-bind {
+//  color: #8393eb;
+//  background-color: #fff;
+//  border-color: #8393eb;
+//  outline: 0;
+//  text-decoration: none;
+//}
+
+.user-info-content {
+  padding: 0;
+  height: calc(~'100% - 32px');
+
+  :global {
+    // tabs 样式
+    .ant-tabs {
+      height: 100%;
+      display: flex;
+
+      &-ink-bar {
+        display: none !important;
+      }
+
+      &-bar {
+        float: none;
+        width: 200px;
+        text-align: left;
+        font-size: 14px;
+        background-color: #f8f8f8;
+
+        .ant-tabs-tab {
+          margin-bottom: 0 !important;
+          text-align: left !important;
+          border-left: 3px solid transparent;
+          font-size: 14px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-left: 40px;
+          transition: none;
+
+          // todo 这里应用icon是写死的
+          &::before {
+            background-repeat: no-repeat;
+            content: '';
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            margin-right: 12px;
+            top: 3px;
+            position: relative;
+          }
+
+          // 切换到 svg 更清晰
+          &:nth-child(1)::before {
+            background-image: url('../../../assets/hiam/userInfo/icon-user-center-count-info-default.svg');
+          }
+
+          &:nth-child(2)::before {
+            background-image: url('../../../assets/hiam/userInfo/icon-user-center-safe-setting-default.svg');
+          }
+
+          &:nth-child(3)::before {
+            background-image: url('../../../assets/hiam/userInfo/icon-user-center-time-setting-default.svg');
+          }
+
+          &:nth-child(4)::before {
+            background-image: url('../../../assets/hiam/userInfo/icon-user-center-message-received-default.svg');
+          }
+
+          &:hover {
+            color: #5867dd;
+          }
+
+          &-active {
+            border-left-color: #5e7ee6;
+            background-color: #fff;
+          }
+        }
+
+        // 激活状态样式
+        .ant-tabs-tab:nth-child(1) {
+          &:hover,
+          &.ant-tabs-tab-active {
+            &::before {
+              background-image: url('../../../assets/hiam/userInfo/icon-user-center-count-info-click.svg');
+            }
+          }
+        }
+
+        .ant-tabs-tab:nth-child(2) {
+          &:hover,
+          &.ant-tabs-tab-active {
+            &::before {
+              background-image: url('../../../assets/hiam/userInfo/icon-user-center-safe-setting-click.svg');
+            }
+          }
+        }
+
+        .ant-tabs-tab:nth-child(3) {
+          &:hover,
+          &.ant-tabs-tab-active {
+            &::before {
+              background-image: url('../../../assets/hiam/userInfo/icon-user-center-time-setting-click.svg');
+            }
+          }
+        }
+
+        .ant-tabs-tab:nth-child(4) {
+          &:hover,
+          &.ant-tabs-tab-active {
+            &::before {
+              background-image: url('../../../assets/hiam/userInfo/icon-user-center-message-received-click.svg');
+            }
+          }
+        }
+      }
+
+      &-content {
+        flex: auto;
+        overflow: auto;
+        padding: 32px;
+      }
+
+      &-tabpane {
+        max-width: 1100px;
+      }
+    }
+  }
+
+  .main {
+    // padding-left: 24px;
+    &-title {
+      position: relative;
+      margin-bottom: 24px;
+      margin-left: 24px;
+      font-size: 16px;
+      font-weight: normal;
+
+      &::before {
+        content: '';
+        border-left: 3px solid #5e7ee6;
+        top: 4px;
+        left: -14px;
+        height: 16px;
+        position: absolute;
+      }
+    }
+  }
+
+  .sub-main {
+    padding-left: 24px;
+  }
+
+  .content {
+    //padding-left: 24px; // content 中的字和 标题对齐
+    margin-left: 10px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      min-height: 40px; // 编辑框的高度
+      &-label {
+        width: 100px;
+        text-align: right;
+        padding-right: 24px;
+        color: #999;
+
+        &:after {
+          content: ':';
+        }
+      }
+
+      &-content {
+        flex: auto;
+        color: #333;
+      }
+    }
+
+    .line-item {
+      display: flex;
+      flex-flow: row;
+      margin: 24px 0;
+
+      &-label {
+        width: 100px;
+        text-align: right;
+        padding-right: 24px;
+        color: #999;
+
+        &:after {
+          content: ':';
+        }
+      }
+
+      &-content {
+        flex: auto;
+        color: #333;
+      }
+
+      &-btns {
+        flex-basis: 60px;
+        font-size: 12px;
+      }
+    }
+
+    .max-len-item {
+      display: flex;
+      flex-flow: row;
+      padding: 24px 32px;
+      border-bottom: 1px dashed #e1e6eb;
+
+      &:first-child {
+        border-top: 1px dashed #e1e6eb;
+      }
+
+      &-icon {
+        flex-basis: 14px;
+        margin-right: 12px;
+        font-size: 14px;
+        line-height: 34px;
+      }
+
+      &-content-wrapper {
+        flex-grow: 1;
+
+        .max-len-item-main-content-wrapper {
+          display: flex;
+
+          .max-len-item-description {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 16px;
+            line-height: 34px;
+          }
+
+          .max-len-item-content {
+            font-size: 14px;
+            line-height: 34px; // description line-height 为 1.5*14px = 21px // 编辑模式下宽度为 34px
+          }
+        }
+
+        .max-len-item-comment {
+          color: #999;
+          font-size: 12px;
+        }
+      }
+
+      .max-len-item-btns {
+        flex-basis: 60px;
+        font-size: 12px;
+        padding-top: 12px; // todo 这里是为了按钮居中，content 高度为52,按钮高度为28
+      }
+    }
+  }
+
+  .account {
+    .base-info {
+      height: 150px;
+      //padding-top: 30px;
+      //padding-bottom: 30px;
+      display: flex;
+      align-items: center;
+
+      &-left {
+        height: 100%;
+        flex-basis: 400px;
+        max-width: 400px;
+        min-width: 400px;
+        padding-right: 84px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px 0 0 5px;
+        background-color: #f8f8f8;
+        position: relative;
+
+        &::before {
+          width: 0;
+          height: 0;
+          z-index: 2;
+          content: ' ';
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-width: 75px 40px;
+          border-style: solid;
+          border-color: #f1f1f1 transparent transparent transparent;
+        }
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 0;
+          height: 0;
+          border-width: 75px 40px 75px 40px;
+          border-color: #eaeaea #eaeaea transparent transparent;
+          border-style: solid;
+        }
+      }
+
+      &-avatar {
+        flex-basis: 100px;
+        margin-left: 24px;
+      }
+
+      &-real-name {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        white-space: nowrap;
+
+        &-content {
+          flex: auto;
+          font-size: 18px;
+          width: 160px;
+          .textOverflow();
+        }
+
+        &-btn {
+          flex: auto;
+          margin-top: 6px;
+        }
+      }
+
+      &-right {
+        height: 100%;
+        flex: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 0 5px 5px 0;
+        position: relative;
+        background-color: #eaeaea;
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-radius: 0 0 5px 0;
+          border-style: solid;
+          border-width: 70px 32px;
+          border-color: transparent #ddd #ddd transparent;
+        }
+
+        .item {
+          min-height: 30px; // 去除item的 min-height: 30px;
+          line-height: 30px;
+          height: 30px;
+
+          &-label {
+            font-size: 13px;
+            text-align: left;
+            padding-left: 32px;
+            padding-right: 0;
+            width: 120px;
+          }
+
+          &-content {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      margin-left: 24px;
+    }
+
+    .group {
+      margin-top: 40px;
+    }
+  }
+
+  .safe {
+    //
+    .security-level {
+      color: #333;
+      margin-right: 24px;
+    }
+
+    .open-app {
+      margin-top: 40px;
+    }
+  }
+
+  .preference {
+    // 内容区域包含描述 label 需要和 内容的输入区域对齐
+    .item {
+      align-items: start;
+
+      &-label {
+        line-height: 40px; // label 和内容区上方对齐
+      }
+
+      &-content {
+        min-height: 40px; // label 和内容区上方对齐
+        line-height: 40px; // label 和内容区上方对齐
+      }
+    }
+  }
+
+  .receive {
+    .edit-table {
+      margin-left: 10px;
+    }
+
+    .operation-btn {
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+  }
+}
+
+// 登录日志样式
+.login-log {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px;
+}

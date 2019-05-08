@@ -1,0 +1,105 @@
+@searchColor: #a5adbb;
+@searchBGC: #4b5b77;
+
+@searchHistoryColor: #dfe2e7;
+@searchHistoryBGC: #616f88;
+
+.search {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 16px;
+    left: 30px;
+    background-image: url('../../../assets/search.svg');
+    background-size: 14px;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .input {
+    background-color: @searchBGC;
+    border-radius: 4px;
+    height: 32px;
+    margin: 7px 20px;
+    width: 180px;
+    cursor: text;
+    font-size: 14px;
+    //FIXME:没有这个字体
+    //font-family:PingFangSC-Regular;
+    > div {
+      background-color: transparent;
+      border: 0 none;
+      height: 32px;
+      padding-left: 22px; //由icon覆盖的区域
+      > div {
+        height: 32px;
+        line-height: 32px;
+
+        > :global(.ant-select-selection__placeholder) {
+          margin-top: -16px; // ant 的垂直居中
+          height: 32px;
+          line-height: 32px;
+          opacity: 0.5;
+          color: @searchColor;
+        }
+      }
+    }
+  }
+
+  .history {
+    max-height: 84px;
+    overflow: hidden;
+
+    &-title {
+      padding: 0 20px;
+      line-height: 22px;
+      margin: 2px;
+      color: @searchColor;
+      font-size: 12px;
+    }
+
+    &-content {
+      //搜索历史
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      list-style: none;
+      justify-items: start;
+      margin: 0;
+
+      > li {
+        flex-shrink: 0;
+        line-height: 22px;
+        margin: 2px;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: @searchHistoryBGC;
+        font-size: 14px;
+
+        > a {
+          color: @searchHistoryColor;
+        }
+      }
+    }
+  }
+}
+
+.focus {
+  background-color: transparent;
+
+  //.icon {
+  //}
+
+  .input {
+    background-color: #fff;
+    color: #333;
+    opacity: 1;
+  }
+}
+
+.collapsed {
+  display: none;
+}

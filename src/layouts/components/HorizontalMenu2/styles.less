@@ -1,0 +1,159 @@
+@import '../../../assets/styles/utils.less';
+
+.horizontal-menu {
+  background-color: #333;
+
+  &-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    > .main-menu-item {
+      height: 32px;
+      line-height: 32px;
+      flex-shrink: 0;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+      width: 180px;
+      border-radius: 15px;
+      margin-right: 5px;
+      padding-left: 15px;
+      cursor: pointer;
+
+      &-active {
+        background-color: rgb(238, 182, 210);
+      }
+
+      &:hover {
+        background-color: #85dfff;
+      }
+    }
+  }
+
+  &-sub {
+    display: none;
+    background-color: #b0c2cc;
+
+    &-active {
+      display: flex;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      font-size: 12px;
+    }
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .sub-sub-menu-item {
+      &:hover {
+        background-color: #ccc;
+        color: #333;
+      }
+    }
+
+    &-hgroup {
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &-title {
+        .textOverflow();
+        height: 24px;
+        line-height: 24px;
+        margin-left: 20px;
+      }
+
+      &-divider {
+        margin: 10px 0 10px 20px;
+        height: 2px;
+        width: 60px;
+        background-color: #1890ff;
+        flex-shrink: 0;
+      }
+
+      &-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        > ul {
+          height: 160px;
+          width: 200px;
+          padding-left: 20px;
+          overflow: auto;
+
+          > li {
+            min-height: 24px;
+            padding-left: 20px;
+            .textOverflow();
+          }
+        }
+      }
+
+      &-border {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: mix(#aaa, #b0c2cc);
+      }
+    }
+  }
+}
+
+.horizontal-menu-theme(@mainBgColor,
+@mainColor,
+@mainHoverBgColor,
+@mainHoverColor : @mainColor,
+//
+@subBgColor,
+@subColor,
+@subHoverBgColor,
+@subHoverColor: @subColor
+) {
+  .horizontal-menu-theme {
+    &-main {
+      background-color: @mainBgColor;
+      color: @mainColor;
+
+      .main-menu-item {
+        &:hover {
+          background-color: @mainHoverBgColor;
+          color: @mainHoverColor;
+        }
+      }
+    }
+
+    &-sub {
+      background-color: @subBgColor;
+
+      .sub-sub-menu-item {
+        &:hover {
+          background-color: @subHoverBgColor;
+          color: @subHoverColor;
+        }
+      }
+    }
+  }
+}
+
+.horizontal-menu-theme-default {
+  .horizontal-menu-theme(#333, #444, #555, #666, #777, #888, #999, #aaa);
+}
+
+.horizontal-menu-theme-color {
+  .horizontal-menu-theme(#333, #444, #555, #666, #777, #888, #999, #aaa);
+}

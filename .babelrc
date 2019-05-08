@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [ "react-app", { "absoluteRuntime": false } ]
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "hzero-ui",
+        "libraryDirectory": "es",
+        "style": true
+      },
+      "ant"
+    ],
+    "lodash",
+    [
+      "@babel/plugin-proposal-decorators", // 启用装饰器
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "components": "./src/components",
+          "utils": "./src/utils",
+          "@": "./src"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>delivery-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="delivery-s">
+            <rect id="Rectangle" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="14" height="14"></rect>
+            <g id="Group-42" transform="translate(0.000000, 1.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="9" height="10"></rect>
+                <path d="M1,1 L1,9 L8,9 L8,1 L1,1 Z M0,0 L9,0 L9,10 L0,10 L0,0 Z" id="Rectangle" fill="#1E3255" fill-rule="nonzero"></path>
+                <rect id="Rectangle" fill="#1E3255" x="2" y="3" width="4" height="1"></rect>
+                <polygon id="Path-32" fill="#29BECE" points="8.57060714 3.61752193 8.57060714 5.5999907 13.3931021 5.76988241 13.3931021 4.37384375 10.6971986 3.61752193"></polygon>
+                <polygon id="Path-33" fill="#FFFFFF" points="8.53917953 5.65408863 8.53917953 8.31250889 13.4622074 8.31250889 13.4622074 5.77385641"></polygon>
+                <path d="M9,4 L9,8 L13,8 L13,4.87770605 L10.7998493,4 L9,4 Z M8,3 L10.9919532,3 L14,4.2 L14,9 L8,9 L8,3 Z" id="Rectangle" fill="#1E3255" fill-rule="nonzero"></path>
+                <polygon id="Path-31" fill="#1E3255" fill-rule="nonzero" points="8.50584308 6.17632899 8.50584308 5.17632899 13.5273341 5.17632899 13.5273341 6.17632899"></polygon>
+                <polygon id="Rectangle" fill="#29BECE" points="2 8 6 8 6 11 4.98331794 12 3.01233173 12 2 11"></polygon>
+                <path d="M3,9 L3,10.5821922 L3.42296013,11 L4.57394165,11 L5,10.5809326 L5,9 L3,9 Z M2,8 L6,8 L6,11 L4.98331794,12 L3.01233173,12 L2,11 L2,8 Z" id="Rectangle" fill="#1E3255" fill-rule="nonzero"></path>
+                <polygon id="Rectangle" fill="#29BECE" points="8 8 12 8 12 11 10.98283 12 8.98405066 12 8 11"></polygon>
+                <path d="M9,9 L9,10.5904875 L9.40298101,11 L10.5735937,11 L11,10.5807915 L11,9 L9,9 Z M8,8 L12,8 L12,11 L10.98283,12 L8.98405066,12 L8,11 L8,8 Z" id="Rectangle" fill="#1E3255" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

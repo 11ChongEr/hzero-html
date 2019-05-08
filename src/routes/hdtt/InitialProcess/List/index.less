@@ -1,0 +1,59 @@
+/*!
+    style - 数据分发-数据初始化
+    @author WH <heng.wei@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+@charset "utf-8";
+
+@height: 28px;
+
+.hdtt-init-list {
+  :global {
+    .ant-form-item {
+      display: inline-block;
+      width: 100%;
+      height: @height;
+      line-height: @height;
+      margin-bottom: 0 !important;
+    }
+    .ant-form-item-control {
+      line-height: @height;
+    }
+    .ant-form-explain {
+      text-align: left;
+      padding: 2px;
+    }
+    .ant-select {
+      width: 100%;
+    }
+    .ant-input-suffix {
+      right: 0;
+    }
+  }
+
+  .list-icon-edit {
+    height: @height;
+    width: @height;
+    line-height: @height;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    background: rgba(0, 0, 0, 0.04);
+  }
+  .list-ellipsis {
+    overflow: 'hidden';
+    cursor: pointer;
+    height: @height;
+    text-overflow: 'ellipsis';
+    white-space: 'nowrap';
+    border-right-width: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  .list-span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,184 @@
+@fontColor: #fff;
+@menuBGC: rgba(88, 189, 230, 0.521);
+@mainMenuBGC: rgba(88, 189, 230, 0.521);
+@mainMenuActionBGC: rgba(80, 228, 215, 0.842);
+@subMenuBGC: rgba(66, 172, 214, 0.486);
+@subMenuBorderColor: #ccc;
+
+.horizontal-menu {
+  text-align: left;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  color: @fontColor;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: @fontColor;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+  }
+
+  .menu-icon {
+    margin-right: 3px;
+  }
+
+  .menu-leaf {
+    cursor: pointer;
+  }
+
+  &-main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: @mainMenuBGC;
+
+    > a {
+      height: 30px;
+      line-height: 30px;
+      width: 180px;
+      flex-shrink: 0;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: row;
+
+      &.menu-active {
+        background-color: @mainMenuActionBGC;
+      }
+
+      > h1 {
+        text-align: left;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+      }
+    }
+  }
+
+  &-sub {
+    display: none;
+    background-color: @subMenuBGC;
+    flex-wrap: wrap;
+
+    &-active {
+      display: flex;
+    }
+
+    ul {
+      padding-left: 10px;
+      list-style: none;
+      flex-direction: column;
+    }
+
+    .hgroup {
+      > nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      &-1 {
+        margin: 6px 0 6px 20px;
+        border-right: 1px solid @subMenuBorderColor;
+        min-height: 100px;
+
+        // &:last-child {
+        //   border-right: 0 none;
+        // }
+
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          > li {
+            flex-grow: 1;
+          }
+        }
+      }
+
+      &-2 {
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          > li {
+            flex-grow: 1;
+          }
+        }
+      }
+
+      &-3 {
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          > li {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: 12px;
+      margin: 10px 0 0 0;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      width: 159px;
+    }
+
+    h2 {
+      width: 149px;
+    }
+
+    h3 {
+      width: 139px;
+    }
+
+    h4 {
+      width: 129px;
+    }
+  }
+}
+
+.horizontal-menu-theme(@mBGC: @menuBGC, @fC: @fontColor, @mMBGC: @mainMenuBGC, @mMABGC: @mainMenuActionBGC, @sMBGC: @subMenuBGC, @sMBC: @subMenuBorderColor) {
+  background-color: @mBGC;
+  color: @fC;
+
+  &-main {
+    background-color: @mMBGC;
+
+    > a {
+      &.menu-active {
+        background-color: @mMABGC;
+      }
+    }
+  }
+
+  &-sub {
+    background-color: @sMBGC;
+
+    .hgroup {
+      &-1 {
+        border-right: 1px solid @sMBC;
+      }
+    }
+  }
+}
+
+.horizontal-menu-theme-default {
+  .horizontal-menu-theme(rgb(255, 255, 255), rgb(255, 255, 255), rgb(76, 189, 189), rgb(40, 214, 226), rgb(79, 185, 136), rgb(24, 2, 2));
+}
+.horizontal-menu-theme-color {
+  .horizontal-menu-theme(rgb(0, 0, 0), rgb(0, 0, 0), rgb(217, 231, 206), rgb(140, 226, 144), rgb(86, 178, 221), rgb(249, 252, 253));
+}

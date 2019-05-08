@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>take-over-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="take-over-s">
+            <polygon id="Path-27" fill="#29BECE" points="0.523360169 3.45874882 1.38601983 0.536621217 12.6301837 0.536621217 13.6835464 3.45874882"></polygon>
+            <path d="M1.36037961,0.5 L0.5,3.08113883 L0.5,13.5 L13.5,13.5 L13.5,2.89604353 L12.6472302,0.5 L1.36037961,0.5 Z" id="Rectangle" stroke="#1E3255"></path>
+            <rect id="Rectangle" stroke="#1E3255" fill="#D8D8D8" x="0.5" y="3.5" width="13" height="1"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="1" y="4" width="12" height="9"></rect>
+            <path d="M4.5,3.5 L4.5,9.06473736 L6.99366379,7.39907455 L9.5,9.0667412 L9.5,3.5 L4.5,3.5 Z" id="Rectangle" stroke="#1E3255" fill="#29BECE"></path>
+        </g>
+    </g>
+</svg>

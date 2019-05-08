@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>customer-management-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="customer-management-b">
+            <polygon id="Rectangle" fill="#6D7A80" points="35.7142857 0 64.2857143 0 71.4285714 7.24956687 71.4285714 42.8571429 28.5714286 42.8571429 28.5714286 7.15207793"></polygon>
+            <path d="M35.7142857,10.1080476 L35.7142857,35.7142857 L64.2857143,35.7142857 L64.2857143,10.1772603 L61.2959759,7.14285714 L38.6756533,7.14285714 L35.7142857,10.1080476 Z M35.7142857,0 L64.2857143,0 L71.4285714,7.24956687 L71.4285714,42.8571429 L28.5714286,42.8571429 L28.5714286,7.15207793 L35.7142857,0 Z" id="Rectangle" fill="#4E4E4E" fill-rule="nonzero"></path>
+            <polygon id="Rectangle-Copy-24" fill="#FFFFFF" points="14.2857143 50 85.7142857 50 100 64.2857143 100 100 -1.38555833e-13 100 -1.38555833e-13 63.9887594"></polygon>
+            <path d="M17.2005344,57.1428571 L7.14285714,66.9914671 L7.14285714,92.8571429 L92.8571429,92.8571429 L92.8571429,67.2443826 L82.7556174,57.1428571 L17.2005344,57.1428571 Z M14.2857143,50 L85.7142857,50 L100,64.2857143 L100,100 L0,100 L0,63.9887594 L14.2857143,50 Z" id="Rectangle-Copy-24" fill="#4E4E4E" fill-rule="nonzero"></path>
+            <polygon id="Rectangle" fill="#6D7A80" points="21.4285714 50 78.5714286 50 50.1419898 85.7142857"></polygon>
+            <path d="M50.1142708,74.2801017 L63.7559336,57.1428571 L36.3363423,57.1428571 L50.1142708,74.2801017 Z M21.4285714,50 L78.5714286,50 L50.1419898,85.7142857 L21.4285714,50 Z" id="Rectangle" fill="#4E4E4E" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>quality-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="quality-s">
+            <polygon id="Path-30" fill="#FFFFFF" points="1.63379392 3.79751608 7.02712556 0.758936972 13.4880392 4 12.3806023 8.4054009 5.55966948 8.61411055 5.55966948 10.7855967 10.4897566 10.7855967 7.22651058 13.4080727 3.38741055 11 0.888584128 6.83488078 6.76580533 6.62909248 6.55957542 4.61415561 0.888584128 4.44060453"></polygon>
+            <polyline id="Path-29" stroke="#1E3255" fill="#29BECE" points="0.69946549 4.52553481 6.75280784 4.52553481 6.75280784 6.75465862 1.19950385 6.75465862"></polyline>
+            <polyline id="Path-29" stroke="#1E3255" fill="#29BECE" transform="translate(8.979329, 9.640097) scale(-1, 1) translate(-8.979329, -9.640097) " points="5.69946549 8.52553481 12.2591919 8.52553481 12.2591919 10.7546586 7.31851133 10.7546586"></polyline>
+            <path d="M7,0.637643914 C4.4053122,2.66873707 2.25193556,3.78574789 0.510184005,3.97204794 C0.691982055,8.17196536 3.291537,11.624371 7.00162497,13.4461739 C10.69446,11.6582428 13.3073698,8.18120121 13.4898004,3.97204627 C11.7480516,3.78574123 9.59468007,2.66873102 7,0.637643914 Z" id="Path-22" stroke="#1E3255" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

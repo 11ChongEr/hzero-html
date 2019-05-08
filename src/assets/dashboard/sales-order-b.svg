@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>sales-order-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="sales-order-b">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="7.14285714" width="100" height="92.8571429"></rect>
+            <path d="M7.14285714,14.2857143 L7.14285714,92.8571429 L92.8571429,92.8571429 L92.8571429,14.2857143 L7.14285714,14.2857143 Z M0,7.14285714 L100,7.14285714 L100,100 L0,100 L0,7.14285714 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <path d="M54.4066459,43.7578832 L54.4066459,79.4721689 L32.9780744,79.4721689 L32.9780744,43.7578832 L32.9780744,22.3293118 L68.6923601,22.3293118 L68.6923601,43.7578832 L54.4066459,43.7578832 Z" id="Rectangle-6" fill="#9FA8AC" transform="translate(50.835217, 50.900740) rotate(-135.000000) translate(-50.835217, -50.900740) "></path>
+            <path d="M61.549503,29.4721689 L40.1209316,29.4721689 L40.1209316,72.3293118 L47.2637887,72.3293118 L47.2637887,36.6150261 L61.549503,36.6150261 L61.549503,29.4721689 Z M54.4066459,43.7578832 L54.4066459,79.4721689 L32.9780744,79.4721689 L32.9780744,22.3293118 L68.6923601,22.3293118 L68.6923601,43.7578832 L54.4066459,43.7578832 Z" id="Rectangle-6" fill="#6D7A80" fill-rule="nonzero" transform="translate(50.835217, 50.900740) rotate(-135.000000) translate(-50.835217, -50.900740) "></path>
+            <rect id="Rectangle" fill="#9FA8AC" x="21.4285714" y="0" width="57.1428571" height="21.4285714"></rect>
+            <path d="M28.5714286,7.14285714 L28.5714286,14.2857143 L71.4285714,14.2857143 L71.4285714,7.14285714 L28.5714286,7.14285714 Z M21.4285714,0 L78.5714286,0 L78.5714286,21.4285714 L21.4285714,21.4285714 L21.4285714,0 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

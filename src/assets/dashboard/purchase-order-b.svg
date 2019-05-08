@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>purchase-order-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="purchase-order-b">
+            <rect id="Rectangle" fill="#9FA8AC" x="0" y="0" width="100" height="21.4285714"></rect>
+            <path d="M7.14285714,7.14285714 L7.14285714,14.2857143 L92.8571429,14.2857143 L92.8571429,7.14285714 L7.14285714,7.14285714 Z M0,0 L100,0 L100,21.4285714 L0,21.4285714 L0,0 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#FFFFFF" x="7.14285714" y="14.2857143" width="85.7142857" height="85.7142857"></rect>
+            <path d="M14.2857143,21.4285714 L14.2857143,92.8571429 L85.7142857,92.8571429 L85.7142857,21.4285714 L14.2857143,21.4285714 Z M7.14285714,14.2857143 L92.8571429,14.2857143 L92.8571429,100 L7.14285714,100 L7.14285714,14.2857143 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#6D7A80" x="57.1428571" y="50" width="21.4285714" height="7.14285714" rx="1"></rect>
+            <rect id="Rectangle" fill="#9FA8AC" x="7.14285714" y="35.7142857" width="42.8571429" height="21.4285714"></rect>
+            <path d="M14.2857143,42.8571429 L14.2857143,50 L42.8571429,50 L42.8571429,42.8571429 L14.2857143,42.8571429 Z M7.14285714,35.7142857 L50,35.7142857 L50,57.1428571 L7.14285714,57.1428571 L7.14285714,35.7142857 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#6D7A80" x="42.8571429" y="71.4285714" width="35.7142857" height="7.14285714" rx="1"></rect>
+        </g>
+    </g>
+</svg>

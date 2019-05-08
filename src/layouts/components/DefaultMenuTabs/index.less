@@ -1,0 +1,32 @@
+@import '../../../assets/styles/variables';
+
+.menu-tabs {
+  &:global(.ant-tabs.ant-tabs-card) {
+    > :global(.ant-tabs-bar) {
+      background-color: #fff;
+
+      :global {
+        .ant-tabs-tab {
+          // 换成这个颜色 不配 梯形 更丑了
+          // background-color: @hzero-bgc-color-light;
+          font-weight: normal;
+          // tabs 的颜色 默认是 #4c4c4c
+          // color: #4c4c4c;
+
+          &:first-child {
+            // 工作台的页签
+            background-color: @hzero-primary-color;
+            color: #fff;
+            padding: @hzero-tabs-card-tab-active-padding;
+          }
+
+          &.ant-tabs-tab-active {
+            color: @hzero-primary-color;
+            background-color: #fff;
+            padding: @hzero-tabs-card-tab-active-padding;
+          }
+        }
+      }
+    }
+  }
+}

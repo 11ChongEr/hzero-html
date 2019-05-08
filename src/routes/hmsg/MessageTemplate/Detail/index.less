@@ -1,0 +1,50 @@
+.template-form {
+  :global {
+    .ant-col-4 {
+      width: 16.2%;
+    }
+
+    .ql-toolbar {
+      height: 11%;
+    }
+
+    .ql-container {
+      height: 88%;
+    }
+
+    .ql-toolbar.ql-snow {
+      line-height: 100%;
+    }
+
+    .ql-snow .ql-picker-label::before,
+    .ql-snow .ql-color-picker .ql-picker-label svg,
+    .ql-snow .ql-icon-picker .ql-picker-label svg {
+      vertical-align: top;
+    }
+  }
+
+  .templateContent > div + div > div > span > div > div {
+    border: 1px solid #f5222d;
+  }
+
+  .templateContent > div + div > div {
+    line-height: 0 !important;
+  }
+
+  .templateContentLabel::before {
+    display: inline-block;
+    margin-right: 4px;
+    content: '*';
+    line-height: 1;
+    font-size: 16px;
+    color: #f5222d;
+  }
+
+  .templateContentError {
+    font-size: 12px;
+    line-height: 15px;
+    color: #f5222d;
+    position: relative;
+    zoom: 1;
+  }
+}

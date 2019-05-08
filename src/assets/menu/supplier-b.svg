@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>supplier-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="supplier-b">
+            <polygon id="Path-26" fill="#9FA8AC" points="2.84580681 26.8276374 2.84580681 75.1182986 50 95.7528636 50 44.1950743"></polygon>
+            <polygon id="Path-28" fill="#9FA8AC" points="5.90488706 23.734943 50 44.0172568 93.8284448 23.734943 50 3.84871909"></polygon>
+            <path d="M50,7.77119705 L7.14285714,26.138544 L7.14285714,73.861456 L50,92.228803 L92.8571429,73.861456 L92.8571429,26.138544 L50,7.77119705 Z M50,0 L100,21.4285714 L100,78.5714286 L50,100 L0,78.5714286 L0,21.4285714 L50,0 Z" id="Path-23" fill="#6D7A80" fill-rule="nonzero"></path>
+            <polygon id="Path-24" fill="#6D7A80" fill-rule="nonzero" points="94.7829002 21.1256737 97.4971182 27.7327478 49.9890105 47.249308 3.22031987 27.7249782 5.9720604 21.1334433 50.0109895 39.518191"></polygon>
+            <polygon id="Path-25" fill="#6D7A80" fill-rule="nonzero" points="46.4285714 42.3035484 53.5714286 42.3035484 53.5714286 93.2899793 46.4285714 93.2899793"></polygon>
+        </g>
+    </g>
+</svg>

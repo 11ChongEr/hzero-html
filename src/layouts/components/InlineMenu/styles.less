@@ -1,0 +1,203 @@
+@import '../../../assets/styles/utils.less';
+@mainMenuColor: #fff;
+@mainMenuActiveColor: #29bece;
+@mainMenuActiveBGC: #021536;
+@subMenuColor: #eee;
+@subMenuActiveColor: #39c4d7;
+@subMenuBGC: #334664;
+@subMenuActiveBGC: @subMenuBGC;
+@leafMenuColor: #fff;
+@leafMenuActiveBGC: #39d1e4;
+@leafMenuLineBGC: #334664;
+@learMenuBGC: #1e3255;
+.resetUl {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-wrap {
+  // div
+  // 占满 除 logo 和 search 之外的 空间
+  flex-grow: 1;
+  flex-shrink: 0; // 用于 一级菜单太多 出现滚动条
+  overflow-y: auto; // 菜单出现滚动态
+}
+
+.menu {
+  // div > ul
+  height: 100%;
+  .resetUl();
+}
+
+.main-menu {
+  // div > ul > li
+  // item 一级菜单
+  height: 48px;
+  color: @mainMenuColor;
+  cursor: pointer;
+  &-item {
+    position: relative;
+    &::after {
+      // 三角形
+      content: '';
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      border-width: 6px;
+      border-style: dashed;
+      border-color: transparent;
+      border-left: 8px solid @mainMenuColor; // 定位
+      position: absolute;
+      right: 18px;
+      top: 18px;
+    }
+  }
+  &-icon {
+    // div > ul > li > div > icon
+    height: 12px;
+    width: 12px;
+    margin: 18px 12px 18px 24px;
+    &-icon {
+      // div > ul > li > div > icon
+      // 如果是 icon  字体大小 需要和 边长一致
+      font-size: 12px;
+    }
+  } // div > ul > li > div > span
+  &-title {
+    height: 48px;
+    font-size: 14px;
+    .textOverflow();
+  }
+  &-active {
+    // div > ul > li
+    color: @mainMenuActiveColor;
+    // background-color: @mainMenuActiveBGC;
+    .main-menu-item::after {
+      // div > ul > li > div
+      border-left-color: @mainMenuActiveColor;
+    }
+    .sub-menu {
+      // div > ul > li > ul
+      max-width: 1000px;
+      z-index: 2;
+    }
+  }
+  &:hover {
+    .main-menu-item {
+      // div > ul > li > div
+      color: @mainMenuActiveColor;
+      &::after {
+        border-left-color: @mainMenuActiveColor;
+      }
+    }
+  }
+}
+
+.sub-menu {
+  // div > ul > li > ul
+  .resetUl();
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // 左上对齐
+  background-color: @subMenuBGC;
+  max-width: 0;
+  position: absolute;
+  left: 220px;
+  top: 48px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &-item {
+    // div > ul > li > ul > li
+    // 不缩放 以便由子元素撑开高度
+    background-color: @subMenuBGC;
+    flex-shrink: 0; // 左右布局, 左边 二级菜单标题 右边 叶子菜单
+    display: flex;
+    &::after {
+      // 三角形
+      content: '';
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      border-width: 6px;
+      border-style: dashed;
+      border-color: transparent;
+      border-left: 8px solid @subMenuColor; // 定位
+      position: absolute;
+      right: 24px;
+      top: 18px;
+    }
+    &-title {
+      // div > ul > li > ul > li > span
+      width: 200px;
+      flex-shrink: 0;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 24px;
+      color: @subMenuColor; // 给三角提供定位
+      position: relative;
+      opacity: 0.95;
+      &:hover,
+      &-active {
+        background-color: @subMenuActiveBGC;
+        color: @subMenuActiveColor;
+        &::after {
+          border-left-color: @subMenuActiveColor;
+        }
+      }
+    }
+    &-content {
+      // div > ul > li > ul > li > div
+      flex-grow: 1;
+      width: 680px;
+      background-color: @learMenuBGC; // 每个下方有22px的间距
+      padding: 0 24px;
+      opacity: 0.9;
+      &-wrap {
+        // div > ul > li > ul > li > div > ul
+        .resetUl();
+        flex-wrap: wrap;
+        display: flex;
+      }
+      &-line {
+        height: 1px;
+        width: 632px;
+        margin: 24px 0;
+        background-color: @leafMenuLineBGC;
+      }
+    }
+    &:first-child {
+      &-content {
+        padding-top: 0;
+      }
+    }
+    &:last-child {
+      &-content {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.leaf-menu {
+  // div > ul > li > ul > li > ul > li
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 24px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: @leafMenuColor;
+  > a {
+    color: inherit;
+  }
+  &:hover,
+  &-active {
+    background-color: @leafMenuActiveBGC;
+  }
+}

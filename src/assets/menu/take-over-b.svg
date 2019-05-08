@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>take-over-b</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.08">
+        <g id="take-over-b">
+            <polygon id="Path-27" fill="#9FA8AC" points="3.73828692 24.7053487 9.90014164 3.83300869 90.2155977 3.83300869 97.7396173 24.7053487"></polygon>
+            <path d="M12.2911373,7.14285714 L7.14285714,22.5876976 L7.14285714,92.8571429 L92.8571429,92.8571429 L92.8571429,21.30263 L87.8175736,7.14285714 L12.2911373,7.14285714 Z M7.14285714,0 L92.8571429,0 L100,20.0694204 L100,100 L-3.28626015e-14,100 L-3.28626015e-14,21.4285714 L7.14285714,0 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#6D7A80" x="0" y="21.4285714" width="100" height="7.14285714"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="7.14285714" y="28.5714286" width="85.7142857" height="64.2857143"></rect>
+            <polygon id="Rectangle" fill="#9FA8AC" points="28.5714286 21.4285714 71.4285714 21.4285714 71.4285714 71.4285714 49.9585714 57.1428571 28.5714286 71.4285714"></polygon>
+            <path d="M64.2857143,28.5714286 L35.7142857,28.5714286 L35.7142857,58.0676765 L49.9509113,48.5582078 L64.2857143,58.0963029 L64.2857143,28.5714286 Z M28.5714286,21.4285714 L71.4285714,21.4285714 L71.4285714,71.4285714 L49.9585714,57.1428571 L28.5714286,71.4285714 L28.5714286,21.4285714 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

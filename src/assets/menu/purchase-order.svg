@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>purchase-order</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="purchase-order">
+            <rect id="Rectangle" stroke="#6D7A80" fill="#9FA8AC" x="0.5" y="0.5" width="13" height="2"></rect>
+            <rect id="Rectangle" stroke="#6D7A80" fill="#FFFFFF" x="1.5" y="2.5" width="11" height="11"></rect>
+            <rect id="Rectangle" fill="#6D7A80" x="8" y="7" width="3" height="1" rx="0.5"></rect>
+            <rect id="Rectangle" stroke="#6D7A80" fill="#9FA8AC" x="1.5" y="5.5" width="5" height="2"></rect>
+            <rect id="Rectangle" fill="#6D7A80" x="6" y="10" width="5" height="1" rx="0.5"></rect>
+        </g>
+    </g>
+</svg>

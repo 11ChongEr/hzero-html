@@ -1,0 +1,45 @@
+.header {
+  &-horizontal {
+    display: flex;
+    background-color: #463a3a;
+    color: #fdf9f9;
+
+    .logo {
+      padding-left: 20px;
+      flex-basis: 260px;
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+
+      > img {
+        flex-basis: 24px;
+        flex-shrink: 0;
+        display: inline-block;
+        vertical-align: middle;
+        height: 24px;
+        min-width: 24px;
+      }
+
+      > h1 {
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 16px;
+        margin: 3px 12px 0 12px;
+      }
+    }
+
+    .menu {
+      flex-grow: 1;
+    }
+
+    .extra {
+      flex-basis: 420px;
+      flex-shrink: 0;
+    }
+  }
+}

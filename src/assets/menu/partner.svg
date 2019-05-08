@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>partner</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="partner">
+            <rect id="Rectangle" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="18" height="18"></rect>
+            <g id="Group-23" transform="translate(1.000000, 1.000000)">
+                <circle id="Oval-Copy-12" stroke="#CCCCCC" cx="11" cy="2" r="1.5"></circle>
+                <circle id="Oval" stroke="#CCCCCC" cx="8" cy="8" r="3.5"></circle>
+                <path d="M10.9402393,10.4012338 L9.98968624,10.7956299 C9.88732085,9.78706101 9.0355744,9 8,9 C7.01100071,9 6.18966583,9.71785668 6.02862147,10.660944 L5.11740041,10.1661649 C5.31063178,9.49697103 5.73058099,8.92394662 6.28868554,8.53565412 C6.10547713,8.23356883 6,7.87910217 6,7.5 C6,6.3954305 6.8954305,5.5 8,5.5 C9.1045695,5.5 10,6.3954305 10,7.5 C10,7.87910217 9.89452287,8.23356883 9.71131446,8.53565412 C10.3337402,8.96869707 10.7843309,9.63150606 10.9402393,10.4012338 Z M7.20485824,8.1065101 C7.45809802,8.03707718 7.72471909,8 8,8 C8.27528091,8 8.54190198,8.03707718 8.79514176,8.1065101 C8.92366054,7.93827686 9,7.72805345 9,7.5 C9,6.94771525 8.55228475,6.5 8,6.5 C7.44771525,6.5 7,6.94771525 7,7.5 C7,7.72805345 7.07633946,7.93827686 7.20485824,8.1065101 Z" id="Oval" fill="#CCCCCC" fill-rule="nonzero"></path>
+                <circle id="Oval-Copy-14" stroke="#CCCCCC" cx="14" cy="8" r="1.5"></circle>
+                <circle id="Oval-Copy-17" stroke="#CCCCCC" cx="11" cy="14" r="1.5"></circle>
+                <circle id="Oval-Copy-11" stroke="#CCCCCC" cx="5" cy="2" r="1.5"></circle>
+                <circle id="Oval-Copy-15" stroke="#CCCCCC" cx="2" cy="8" r="1.5"></circle>
+                <circle id="Oval-Copy-18" stroke="#CCCCCC" cx="5" cy="14" r="1.5"></circle>
+                <path d="M5.55727331,3.37896569 L6.23177538,4.79934456" id="Path-16" stroke="#CCCCCC"></path>
+                <path d="M9.46381035,4.80279226 L10.2324273,3.45305455" id="Path-17" stroke="#CCCCCC"></path>
+                <path d="M6.36594225,11.188372 L5.59343747,12.6572387" id="Path-18" stroke="#CCCCCC"></path>
+                <path d="M10.3319704,12.5700193 L9.48002187,11.2887221" id="Path-19" stroke="#CCCCCC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

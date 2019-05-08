@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'hzero-icon';
+  src: url('./iconfont.eot'); /* IE9 */
+  src: url('./iconfont.eot#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+      url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARgAAsAAAAACQAAAAQUAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqFKIQoATYCJAMQCwoABCAFhQUHQxutB8ieA24sPMKw6dPn+jzE8giotawHFmouwIoco2UZlfJRQA8WhQOW/v3XC8XC8f//nnWDzgRjZGF1VkoXLF7qSU+a6UDp0E3X+CX/ZBJN7lohPUhmAWMNEKAS/n+uqRfb8xP4tAFIZGGFVdh0INFWQJ0UyRM6kL25bhi7uIzjBBTjusL2tZNnAyXTxgWEa6tZD1RMJZcQQSutc5ZmDmsAjTZW4meA5y754SckCkRVAu2kkxtngpFPPuMJ5b9iYSug9GcAs4qEeSATznNNZwjfPY9QpN6kTaDVivTVFPCM//8fcdYianUzsfWfF2rQRF2Quu5JfCFNOpEvAaw8MQ85JyDK9pIWfcAn4BdNMuqG1SrVSAwNt20XRZIERYeFhee2tEQ5qtQV/lhxQQjs7fWz4dXLoxZW+5QWJm6MWcxk/H4s6/NFZ/ObDyuHqo54j/LVfq9a1aL4RI6fa80B/MO2tkFbdmCEd2eH4MzPM0G7jiXhq4/3C957MpVQ1aVY1OyWaB8bO6c61uz3xujUqiiuC99xqZk3zZ7Du4NUb2ywT5mtxhD+6mi8he8JYUO2A/5sm20AxTNfVOCHBpWZVyk4CN5UxWD+NozKzxvV83rcLWVaPHtXc2/d4LiFp3+x72LesQnBjxIXO9i3sW/ZS8xt2vN/Xdast+v2Kq+pQDemnfFhx8jtOs2OVD1zJipPG4PyBMif0jvpwbg17FFYduSVyOwwLbUzciel5S5qrmguco/cxwymdp4shqjVxunGBo6s6UyEz5qVGZ3Jz/ZEC2U7Jk3aIZwjCPIQglT6JJvStGDbkQ2RDSOVyG2+BqoLHUl3oR54HoRlRpyOMA0PIspR3/KPNHWGOk2fph7QtuMMnSE3hParNjrKP4tueK3Qrym4B/BfyQWEAkA6xk9hyyZ++r/4jsuczV0SOvRry5IAn/e3ViGvHevlsmuz/4KkyQP4/y8XsFxNmbMofuQxeaMAqk+85kkRRcF/YBtwrw/Z8A32BsVwCFFjApJiEs3UZah07EKtOIBizrTVHYNyEEKmgVm1AIIheyHq8RGSITfRTH0LlZEwqA0VC8VpddmyYzIvM0ZCehmZOEM2ZzWK6YIRITOWHCSJ3dRWM5E5w6GX2BTfoUOS2woLuF7de2b40lA6kvqa4faYe8uywAmS6OS0nZ6GHA6Rc0miDRnl7hZZdg3u0UPIe1N3o+gExh4JoidDTDgG2ThWRqJ0gr1JxjiXA5GIupWQPxNilsFBTyrNmhbpGIGbYeLuOb1017MWmiZKz8k4t2A3D7PekJAJIqGV14mjna0BcehuEceVP8gGMZJ1Z2nhdBmsB8ol1BV1H1fivNoVUGgvyAHHCIzENNB5aBFdLmu6eYxeIpHJKpNG0ZUNAA==')
+      format('woff2'),
+    url('./iconfont.woff') format('woff'), url('./iconfont.ttf') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('./iconfont.svg#hzero-icon')
+      format('svg'); /* iOS 4.1- */
+}
+
+.hzero-icon {
+  font-family: 'hzero-icon' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hzero-icon-shoppingCar:before {
+  content: '\e655';
+}
+
+.hzero-icon-edit:before {
+  content: '\e604';
+}
+
+.hzero-icon-copy:before {
+  content: '\e606';
+}

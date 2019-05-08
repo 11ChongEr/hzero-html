@@ -1,0 +1,321 @@
+@collapsedWith: 80px;
+@normalPadding: 20px;
+@itemHeight: 46px;
+@basePadding: 16px;
+@fontNormalLineHeight: 22px; // 字体大小的 1.5 倍
+@fontNormalSize: 14px;
+@fontNormalPaddingTop: @normalPadding / 2;
+@mainMenuColor: #ccc;
+@mainMenuItemWidth: 220px;
+@mainMenuTriangleWidth: 6px; // 三角形的宽度
+@mainMenuTriangleHeight: 8px; // 三角形的高度
+@mainMenuTrianglePadding: @normalPadding - @mainMenuTriangleWidth;
+@mainMenuBGC: #1e3255;
+@mainMenuActiveColor: #29bece;
+@leafMenuWidth: 520px;
+// TODO: 菜单的层级 怎么办
+@subMenuZIndex: 2000;
+@subMenuWidth: 200px;
+@subMenuWrapWidth: @subMenuWidth + @leafMenuWidth;
+@subMenuBGC: @mainMenuBGC;
+@subMenuActiveBGC: #112446;
+@subMenuActiveColor: @mainMenuActiveColor;
+@subMenuTriangleWidth: 6px; // 三角形的宽度
+@subMenuTriangleHeight: 8px; // 三角形的高度
+@subMenuTrianglePadding: @normalPadding - @subMenuTriangleWidth;
+@subMenuColor: #eee;
+@leafMenuItemWidth: 152px;
+@leafMenuItemPadding: @basePadding;
+@leafMenuBGC: @mainMenuBGC;
+@leafMenuActiveBGC: @mainMenuActiveColor;
+@leafMenuColor: #eee;
+@leafMenuActiveColor: #fff;
+@leafMenuBorderRadius: 2px;
+@subMenuOpacity: 0.95;
+@leafMenuOpacity: 0.9;
+@leafMenuItemWrapLineBGC: #3f5376;
+@leafMenuItemWrapLinePadding: 12px @basePadding;
+.resetUl {
+  padding: 0;
+  list-style: none;
+}
+
+.textOverflow() {
+  // 文字显示 ...
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.main-menu-wrap {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main-menu {
+  // ul
+  .resetUl();
+  display: flex;
+  flex-direction: column;
+  background-color: @mainMenuBGC;
+}
+
+.main-menu-item {
+  // ul > li
+  cursor: pointer;
+  width: @mainMenuItemWidth;
+
+  &-content {
+    // ul > li > div[0]
+    color: @mainMenuColor;
+    height: @itemHeight;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      // 三角形
+      margin-right: @mainMenuTrianglePadding;
+      content: '';
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      border-width: @mainMenuTriangleWidth;
+      border-style: dashed;
+      border-color: transparent;
+      border-left: @mainMenuTriangleWidth solid @mainMenuColor; // 定位
+    }
+  }
+
+  &-icon {
+    // ul > li > div[0] > Icon/img
+    height: @fontNormalSize;
+    width: @fontNormalSize;
+    margin: 0 @fontNormalPaddingTop 0 @normalPadding;
+
+    &-icon {
+      // ul > li > div[0] > Icon
+      // 如果是 icon  字体大小 需要和 边长一致
+      font-size: @fontNormalSize;
+    }
+  }
+
+  &-title {
+    // ul > li > div[0] > span
+    flex-grow: 1;
+    .textOverflow();
+  }
+
+  &-hover {
+    // 展开菜单 高亮一级菜单
+    .main-menu-item-content {
+      color: @mainMenuActiveColor;
+    }
+
+    .sub-menu-wrap {
+      // transition: opacity .5s;
+      width: @subMenuWrapWidth;
+      opacity: 1;
+      z-index: @subMenuZIndex;
+    }
+
+    .sub-menu-mask {
+      z-index: @subMenuZIndex - 4;
+      height: 100vh;
+      width: calc(~'100vw - @{mainMenuItemWidth}');
+    }
+  }
+
+  &-active {
+    // 高亮一级菜单
+    .main-menu-item-content {
+      color: @mainMenuActiveColor;
+    }
+  }
+}
+
+.sub-menu-mask {
+  position: absolute;
+  left: @mainMenuItemWidth;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.288);
+  //height: 100vh;
+  //width: calc(~"100vw - @{mainMenuItemWidth}");
+  height: 0;
+  width: 0;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  left: @mainMenuItemWidth;
+  //top: 48px; // 顶部 tab 有 48 的高度
+  bottom: 0; // 占满剩下的屏幕
+  width: 0; // 默认不显示
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0; // 透明度有变化
+  // transition: opacity .5s;
+  display: flex;
+
+  // 恢复鼠标状态
+  cursor: initial;
+
+  //// 火狐 滚动条
+  //// stylelint-disable-next-line
+  //scrollbar-color: #d8d8d8 @leafMenuBGC;
+  //
+  //// ie 滚动条
+  //
+  //scrollbar-track-color: @leafMenuBGC; /*立体滚动条背景颜色*/
+  //scrollbar-base-color: #d8d8d8; /*滚动条的基色*/
+  //
+  //// chrome 滚动条
+  //&::-webkit-scrollbar-track {
+  //  background-color: @leafMenuBGC;
+  //  opacity: @leafMenuOpacity;
+  //}
+
+  //&::-webkit-scrollbar-thumb {
+  //  background-color: @leafMenuBGC;
+  //  opacity: @leafMenuOpacity;
+  //}
+}
+
+.sub-menu {
+  padding-top: @basePadding;
+  opacity: @subMenuOpacity;
+  background-color: @subMenuBGC;
+  width: @subMenuWidth;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+
+.sub-menu-item {
+  &-content {
+    height: @itemHeight;
+    width: @subMenuWidth;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      // 三角形
+      flex-shrink: 0;
+      margin-right: @subMenuTrianglePadding;
+      content: '';
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      border-width: @subMenuTriangleWidth;
+      border-style: dashed;
+      border-color: transparent;
+      border-left: @subMenuTriangleWidth solid @subMenuColor; // 定位
+    }
+
+    &:hover {
+      color: @subMenuActiveColor;
+      //background-color: @subMenuActiveBGC;
+
+      &::after {
+        border-left-color: @subMenuActiveColor;
+      }
+    }
+  }
+
+  &-title {
+    .textOverflow();
+    flex-grow: 1;
+    margin-left: @normalPadding;
+  }
+
+  &-active,
+  &-hover {
+    .sub-menu-item-content {
+      color: @subMenuActiveColor;
+      //background-color: @subMenuActiveBGC;
+
+      &::after {
+        border-left-color: @subMenuActiveColor;
+      }
+    }
+  }
+}
+
+.leaf-menu {
+  padding-top: @basePadding;
+  opacity: @leafMenuOpacity;
+  background-color: @leafMenuBGC;
+  width: @leafMenuWidth;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+
+.leaf-menu-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; // padding:
+  &-line {
+    background-color: @leafMenuItemWrapLineBGC;
+    margin: @leafMenuItemWrapLinePadding;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    height: 1px;
+    clear: both;
+    vertical-align: middle;
+    position: relative;
+    top: -0.06em;
+    list-style: none;
+  }
+}
+
+.leaf-menu-item {
+  .textOverflow();
+  flex-shrink: 0;
+  width: @leafMenuItemWidth;
+  font-size: @fontNormalSize;
+  line-height: @fontNormalLineHeight;
+  padding: @fontNormalPaddingTop @normalPadding;
+  color: @leafMenuColor;
+  border-radius: @leafMenuBorderRadius;
+  margin-left: @leafMenuItemPadding;
+  cursor: pointer;
+
+  &:hover,
+  &-active {
+    color: @leafMenuActiveColor;
+    background-color: @leafMenuActiveBGC;
+  }
+}
+
+// 覆盖样式必须写在最下面
+.main-menu-collapsed {
+  .main-menu-item {
+    width: @collapsedWith;
+  }
+
+  .main-menu-item-title,
+  .main-menu-item-content::after {
+    display: none;
+  }
+
+  .main-menu-item-content {
+    width: @collapsedWith;
+    justify-content: center;
+  }
+
+  .sub-menu-wrap,
+  .sub-menu-mask {
+    left: @collapsedWith;
+  }
+
+  .sub-menu-mask {
+    height: 100vh;
+    width: calc(~'100vw - @{collapsedWith}');
+  }
+}

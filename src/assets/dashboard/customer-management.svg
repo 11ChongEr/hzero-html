@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>customer-management</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="customer-management">
+            <polygon id="Rectangle" fill="#9FA8AC" points="5 0 9 0 10 1.01493936 10 6 4 6 4 1.00129091"></polygon>
+            <path d="M5,1.41512667 L5,5 L9,5 L9,1.42481645 L8.58143662,1 L5.41459147,1 L5,1.41512667 Z M5,0 L9,0 L10,1.01493936 L10,6 L4,6 L4,1.00129091 L5,0 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+            <polygon id="Rectangle-Copy-24" fill="#FFFFFF" points="2 7 12 7 14 9 14 14 -1.38555833e-13 14 -1.38555833e-13 8.95842632"></polygon>
+            <path d="M2.40807482,8 L1,9.37880539 L1,13 L13,13 L13,9.41421356 L11.5857864,8 L2.40807482,8 Z M2,7 L12,7 L14,9 L14,14 L0,14 L0,8.95842632 L2,7 Z" id="Rectangle-Copy-24" fill="#6D7A80" fill-rule="nonzero"></path>
+            <polygon id="Rectangle" fill="#9FA8AC" points="3 7 11 7 7.01987857 12"></polygon>
+            <path d="M7.01599791,10.3992142 L8.92583071,8 L5.08708793,8 L7.01599791,10.3992142 Z M3,7 L11,7 L7.01987857,12 L3,7 Z" id="Rectangle" fill="#6D7A80" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
